@@ -158,7 +158,24 @@ h6{
     font-size: 35px;
     text-align: center;
 }
-
+.circle-image{
+    position: absolute;
+    width: 200px;
+    animation: circle 4s linear infinite;
+    top: -2%;
+    left: -17%
+}
+.circle-image img {
+    width: 200px;
+}
+@keyframes circle {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
 .card-img{
     display: flex;
     justify-content: center;
