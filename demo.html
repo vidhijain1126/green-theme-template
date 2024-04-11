@@ -2,11 +2,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height">
     <title>demo</title>
     <link rel="stylesheet" href="style.css">
     <script>
-        // Function to check if an element is in the viewport
         function isInViewport(element) {
             const rect = element.getBoundingClientRect();
             return (
@@ -17,7 +16,6 @@
             );
         }
 
-        // Function to handle scroll event
         function handleScroll() {
             const section = document.querySelector('.hero');
             const herotext = document.querySelector('.herotext');
@@ -29,9 +27,13 @@
             }
         }
 
-        window.addEventListener('scroll', handleScroll);
-    </script>
+        window.addEventListener('DOMContentLoaded', function () {
+            handleScroll();
+        });
 
+        window.addEventListener('scroll', handleScroll);
+
+    </script>
 </head>
 
 <body>
@@ -73,6 +75,7 @@
             <img src="forwards.png" class="hforward">
         </div>
         <div class="hcard">
+            <div class="circle-image"></div>
             <div class="card-img"><img src="ig.webp"></div>
             <h4>Women’s Course</h4>
             <p>Lorem Ipsum is simply dummy themes industryes psum has been them industry the loep into type setting.</p>
@@ -190,13 +193,37 @@
             <h2>We Have 8,00+ Trusted Partners.</h2>
             <p>Printing and typesetting standard dummy text ever since</p>
             <br>
-            <div class="brand">
-                <img src="brand-2-1.png" alt="1">
-                <img src="brand-2-1.png" alt="2">
-                <img src="brand-2-1.png" alt="3">
-                <img src="brand-2-1.png" alt="4">
-                <img src="brand-2-1.png" alt="5">
-                <img src="brand-2-1.png" alt="6">
+            <div class="slider-wrapper">
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 1"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 2"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 1"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 2"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -312,39 +339,6 @@
             <li><a href="">Terms of Service </a></li>
         </ul>
     </div>
-
-    <div class="slider-wrapper">
-        <div class="slider-container">
-            <div class="slider">
-                <div class="slide"><img src="brand-2-1.png" alt="Image 1"></div>
-                <div class="slide"><img src="brand-2-1.png" alt="Image 2"></div>
-                <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
-                <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
-                <div class="slide"><img src="brand-2-1.png" alt="Image 1"></div>
-                <div class="slide"><img src="brand-2-1.png" alt="Image 2"></div>
-                <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
-                <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
-                <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
-                <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
-                <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
-                <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
-                <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
-                <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
-                <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
-                <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
-                <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
-                <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
-                <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
-                <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
-                <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
-                <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
-                <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
-                <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
-                <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
-                <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
-            </div>
-        </div>
-    </div>    
 
 </body>
 

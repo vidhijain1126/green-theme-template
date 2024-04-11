@@ -73,21 +73,20 @@ button:hover{
     background-image: url(slider-3.webp);
 }
 .herotext{
+    margin-top: -90px;
     width: 40%;
-    padding: 10% 5% 2% 5%;
+    padding: 10% 5% 2% 12%;
     position: relative;
-    margin-left: 7%;
-    left: -5%;
     transition: transform 1s;
 }
 .animate {
     animation-name: comeIn;
-    animation-duration: .9s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
 }
 @keyframes comeIn {
     0%{
-        left: -5%;
+        left: -50%;
     }
     100%{
         left: 10px;
@@ -432,11 +431,11 @@ h3{
 }
 
 .slider-wrapper {
-    display: grid;
-    position: relative;
+    display: flex;
     overflow: hidden;
     margin: 0 auto;
     padding: 5% 10%;
+    justify-content: center;
 }
 
 .slider-container {
@@ -445,10 +444,16 @@ h3{
     vertical-align: top;
     align-items: center;
     width: 90%;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
     width: calc(250px * 9);
     transition: transform 1s;
     animation: scroll 20s linear infinite;
 }
+
 @keyframes scroll {
     0%{
         transform: translateX(0);
@@ -456,12 +461,7 @@ h3{
     100%{
         transform: translateX(calc(-200px * 9));
     }
-}
-
-.slider {
-    display: flex; 
-}
-
+} 
 
 .slide { 
     width: 200px;
