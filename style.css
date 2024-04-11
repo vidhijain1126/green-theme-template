@@ -158,6 +158,7 @@ h6{
     font-size: 35px;
     text-align: center;
 }
+
 .circle-image{
     position: absolute;
     width: 200px;
@@ -182,13 +183,20 @@ h6{
     width: 100px;
     height: 100px;
     padding: 10px;
-    border-radius: 50%;
-    border: 1px black solid;
+    border-radius: 50%;background-color: #52565b2c;
     align-items: center;
 }
 .hcard img{
     width: 70px;
     height: 70px;
+}
+.hforward1{
+    display: flex;
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50%;
+    background-color: #ffa300;
+    color: white;
 }
 .hforward{
     width: 50px !important;
@@ -196,6 +204,10 @@ h6{
     border-radius: 50%;
     background-color: #ffa300;
     color: white;
+    display: none;
+}
+.hcard:hover .hforward{
+    display: flex;
 }
 .about{
     padding: 5% 12%;
@@ -217,8 +229,13 @@ h6{
     width: 50%;
     background-color: #fff;
     padding: 10% 3% 10% 7%;
+    position: relative;
 }
-
+.hAbout img{
+    position: absolute;
+    top: -7%;
+    right: -5%;
+}
 .aboutbtn{
     position: absolute;
     bottom: 70px;
@@ -299,8 +316,52 @@ h6{
     flex-wrap: wrap;
     text-align: center;
     align-items: center;
-    background-color: #ffa300;
+    background-color: #094435;
     color: #fff;
+    position: relative;
+}
+.testmonial p{
+    line-height: 2;
+}
+.leaf1{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    animation: up-down 3s linear infinite;
+}
+@keyframes up-down {
+    0%{
+        transform: translateY(0);
+    }
+    30%{
+        transform: translateY(15px);
+    }
+    60%{
+        transform: translateY(20px);
+    }
+    100%{
+        transform: translateY(2px);
+    }
+}
+.leaf2{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    animation: down-up 3s linear infinite;
+}
+@keyframes down-up {
+    0%{
+        transform: translateY(20px);
+    }
+    30%{
+        transform: translateY(15px);
+    }
+    60%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(19px);
+    }
 }
 .avtar{
     height: 90px;
@@ -310,7 +371,7 @@ h6{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
+    margin: 40px 0px 10px 0px;
 }
 .avtar img{
     width: 60px;
@@ -357,6 +418,12 @@ h6{
     background-color: #0a4d3c;
     color: #fff;
 }
+
+.timecard:hover .tdate{
+    background: #fff;
+    color: #52565b;
+}
+
 .uppert{
     display: flex;
     flex-direction: row;
@@ -373,12 +440,13 @@ h6{
     padding: 0px 5px 0px 0px;
 }
 .tdate{
-    background-color: #fff;
-    width: 60px;
-    padding: 3px;
-    font-size: 22px;
+    background-color: #094435;
+    width: 40px;
+    padding: 5px 6px;
+    font-size: 15px;
     font-weight: 600;
     text-align: center;
+    color: #fff;
 }
 .tcard{
     justify-content: flex-start;
