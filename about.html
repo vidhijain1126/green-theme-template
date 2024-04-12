@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height">
+    <title>demo</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        function handleScroll() {
+            const section = document.querySelector('.hero');
+            const herotext = document.querySelector('.herotext');
+
+            if (isInViewport(section)) {
+                herotext.classList.add('animate');
+            } else {
+                herotext.classList.remove('animate');
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', handleScroll);
+        window.addEventListener('scroll', handleScroll);
+
+    </script>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo"><img src="logo.png"></img></div>
+        <ul class="menu">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+        <div class="navbtn"><button>signup</button></div>
+    </nav>
+
+    <div class="hero">
+        <div class="herotext">
+            <h6>Health is wealth</h6>
+            <h1>About Us</h2>
+                <p>Home // <span class="yellow">About Us</span></p>
+        </div>
+    </div>
+
+    <div class="about" style="background-color: #fff;">
+        <div class="hAboutImg">
+            <div class="circle-image"><img src="logo-search-grid-1x-removebg-preview-removebg-preview.png"></div>
+            <img src="careers-in-corporate-finance.jpg" height="80%" ; width="90%"><button class="aboutbtn">Meet
+                Instructor</button>
+        </div>
+        <div class="hAbout" style="background-color: #F8F6F4;">
+            <img src="leaf.webp">
+            <h6>25+ YEARS OF EXPERIENCE</h6>
+            <h2>We have expert instructor for help our students.</h2>
+            <p>Lorem Ipsum is simply dummy text the printing and typesetting standard dummy text ever since the 150 when
+                an unknown printe specimen book has survived centuries.</p>
+            <span class="aboutSpan">100+ Courses</span>
+            <p>Lorem Ipsum is simply dummy text the printing and typesetting standard dummy text ever since the 150 when
+                an unknown printe specimen book has survived centuries.</p>
+        </div>
+    </div>
+
+    <div class="aMission">
+        <div class="firstMis">
+            <h4>Our Mission & Vission</h4>
+            <h2>Nutras is a fitness and nutrition care center.</h2>
+            <p>Lorem Ipsum is simply dummy text the printing and typesetting standard dummy text ever since the 150 when
+                an unknown printen specimen book has survived centuries.</p>
+            <p>Lorem Ipsum is simply dummy text the printing and typesetting standard dummy text ever since the 150 when
+                an unknown printen specimen book has survived centuries.</p>
+        </div>
+        <div class="secMis">
+            <ul>
+                <li>Simply dummy text printin standard since printen specimen centuries.</li>
+                <li>Various versions haven evolved over there sometimes by accident.</li>
+                <li>There are variations of passage’s availabls suffered alteration inner passage’s availab suffered
+                    alteration in.</li>
+            </ul>
+            <button>All Course</button>
+        </div>
+    </div>
+
+    <div class="hblog">
+        <div class="btitle">
+            <h6>MEET OUR INSTRUCTOR</h6>
+            <h2>Expert Instructor</h2>
+        </div>
+        <div class="bcard">
+            <div class="blogCard">
+                <img src="about.jpg" width="100%" height="70%">
+                <h6 class="yellow">Founder</h6>
+                <h4>Willetta Sadler</h4>
+            </div>
+            <div class="blogCard">
+                <img src="about.jpg" width="100%" height="70%">
+                <h6 class="yellow">Founder</h6>
+                <h4>Willetta Sadler</h4>
+            </div>
+            <div class="blogCard">
+                <img src="about.jpg" width="100%" height="70%">
+                <h6 class="yellow">Founder</h6>
+                <h4>Willetta Sadler</h4>
+            </div>
+        </div>
+        <div class="bButton">
+            <Button>Join with us</Button>
+        </div>
+    </div>
+
+    <div class="testmonial">
+        <div class="subtest">
+            <div class="leaf1"><img src="shape-5.webp"></div>
+            <div class="leaf2"><img src="shape-6.webp"></div>
+            <h6 class="yellow">HAPPY STUDENTS</h6>
+            <h2>What Client Say About Us</h2>
+            <img src="about.jpg" class="avtar">
+            <p>Lorem sum same dummy text theme industry psum have been them industry the leaf into type setting. Lorem
+                sum same dummy text theme industry psum have been them industry the leaf into type setting. them
+                industry the leaf into type setting. </p>
+            <br>
+            <h4>Abcd jain </h4>
+            <h6 class="yellow">ui/ux</h6>
+        </div>
+    </div>
+
+    <div class="partner">
+        <div class="subdivp">
+            <img src="leaf.webp" class="simg">
+            <h6>WORK WITH TRUSTED BRAND</h6>
+            <h2>We Have 8,00+ Trusted Partners.</h2>
+            <p>Printing and typesetting standard dummy text ever since</p>
+            <br>
+            <div class="slider-wrapper">
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 1"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 2"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 1"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 2"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                        <div class="slide"><img src="brand-2-1.png" alt="Image 3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footerWrap">
+        <div class="footer">
+            <div class="footsec1">
+                <h3>Subscribe Newsletter</h3>
+                <p>Lorem Ipsum has been them an industry printer took a galley make book.</p>
+                <input type="email">
+                <button type="submit">Submit</button>
+            </div>
+            <div class="footsec2">
+                <h3>Quick Links</h3>
+                <a></a>
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Contect</a>
+            </div>
+            <div class="footsec3">
+                <h3>Opening Hours</h3>
+                <p>Mon-Fri: 9 AM – 6 PM <br> Saturday: 9 AM – 4 PM <br> Sunday: Closed</p>
+                <br>
+                <h3>Location</h3>
+                <p>176 W street name, New York, NY 10014 </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="copyright">
+        <p>© 2024 Custom theme by xyz</p>
+        <ul>
+            <li><a href="">Terms of Service </a></li>
+            <li><a href="">Terms of Service </a></li>
+            <li><a href="">Terms of Service </a></li>
+            <li><a href="">Terms of Service </a></li>
+        </ul>
+    </div>
+    </body>
+    </html>
