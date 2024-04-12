@@ -512,6 +512,7 @@ h6{
 }
 .footerWrap{
     background-color: #0a4d3c;
+    position: relative;
 }
 .footsec3, .footsec2, .footsec1{
     width: 30%;
@@ -559,6 +560,9 @@ h3{
 .footerWrap p{
     font-size: 15px;
     margin-top: 0px;
+}
+.footerWrap img{
+    opacity: 0.07;
 }
 
 .slider-wrapper {
@@ -638,4 +642,55 @@ h3{
   }
   .secMis button{
     background-color: #ffb400;
+  }
+  .contact{
+    display: flex;
+    margin: 5% 15%;
+    align-items: center;
+  }
+  .cont-inner{
+    display: flex;
+    width: 65%;
+    flex-direction: column;
+  }
+  .cont-inner2{
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    margin-left: 15%;
+    background-color: #094435;
+    color: #fff;
+    padding: 3%;
+    position: relative;
+    overflow: hidden;
+  }
+  .contact-form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 5%;
+  }
+  .contact-form input{
+    width: 40%;
+    border: 0.5px #CEDBD8 solid;
+    border-radius: 0%;
+    padding: 20px;
+  }
+  textarea{
+    width: 90%;
+    height: 80%;
+    margin-top: 5%;
+    padding: 60px 20px 50px 20px;
+    border: 0.5px #CEDBD8 solid;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+  }
+  .contLeaf{
+    position: absolute;
+    top: -60px;
+    right: -65px;
+    width: 70%;
+    rotate: 90deg;
   }

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height">
+    <title>demo</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        function handleScroll() {
+            const section = document.querySelector('.hero');
+            const herotext = document.querySelector('.herotext');
+
+            if (isInViewport(section)) {
+                herotext.classList.add('animate');
+            } else {
+                herotext.classList.remove('animate');
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', handleScroll);
+        window.addEventListener('scroll', handleScroll);
+
+    </script>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo"><img src="logo.png"></img></div>
+        <ul class="menu">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+        <div class="navbtn"><button>signup</button></div>
+    </nav>
+
+    <div class="hero">
+        <div class="herotext">
+            <h6>Health is wealth</h6>
+            <h1>Contact Us</h2>
+                <p>Home // <span class="yellow">Contact</span></p>
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="cont-inner">
+            <h4 class="yellow">Don’t worry!</h4>
+            <h2>If you have any query? Contact with us.</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="number" placeholder="Phone">
+                <input type="text" placeholder="Address">
+                <textarea placeholder="Message"></textarea>
+                <button type="submit">Submit Now</button>
+            </form>
+        </div>
+        <div class="cont-inner2">
+            <img class="contLeaf" src="shape-5.webp">
+            <h4 class="yellow">Phone:</h4>
+            <p>
+                (765) 388-2142<br>
+                (304) 855-3859</p>
+            <h4 class="yellow">Email</h4>
+            <p>
+                example@gmail.com<br>
+                yourmail@gmail.com
+            </p>
+            <h4 class="yellow">Address:</h4>
+            <p>
+                1229 Roma Ct San Jacinto, California(CA), 92583
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
