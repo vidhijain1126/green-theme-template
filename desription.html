@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height">
+    <title>Description</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+
+        function handleScroll() {
+            const section = document.querySelector('.hero');
+            const herotext = document.querySelector('.herotext');
+
+            if (isInViewport(section)) {
+                herotext.classList.add('animate');
+            } else {
+                herotext.classList.remove('animate');
+            }
+        }
+
+        window.addEventListener('DOMContentLoaded', handleScroll);
+        window.addEventListener('scroll', handleScroll);
+
+    </script>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo"><img src="logo.png"></img></div>
+        <ul class="menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="navbtn"><a href="login.html"><button>sign-in</button></a></div>
+    </nav>
+
+    <div class="hero">
+        <div class="herotext">
+            <h6>Health is wealth</h6>
+            <h1>Course</h1>
+                <p>Home // <span class="yellow">Course</span></p>
+        </div>
+    </div>
+
+    <div class="courseWrap">
+        <div class="sidbar">
+            <span>$420.38</span>
+            <ul>
+                <li>
+                    <img src=""><b>Instructor</b><span>Pamela Foster</span>
+                </li>
+                <li>
+                    <img src=""><b>Duration</b><span>08 hr 15 mins</span>
+                </li>
+                <li>
+                    <img src=""><b>Lectures</b><span>29</span>
+                </li>
+                <li>
+                    <img src=""><b>Level</b><span>Secondary</span>
+                </li>
+                <li>
+                    <img src=""><b>Language</b><span>English</span>
+                </li>
+                <li>
+                    <img src=""><b>Certificate</b><span>Yes</span>
+                </li>
+            </ul>
+            <button>Enroll Now</button>
+            <div class="connect">
+                <p>Share with others:</p>
+                <ul class="social">
+                    <li><img src="fb.png" alt="f"></li>
+                    <li><img src="linkdin.png" alt="l"></li>
+                    <li><img src="ig.webp" alt="i"></li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <div class="main-description">
+                <img src="about.jpg" class="mainImg">
+                <img src="buy-now-play-icon-linkedin-icon-circle-white-11553389109xrmulwue79-removebg-preview.png" class="playBtn"></img></img>
+            </div>
+            <h2>Hacking exercise for health new science of fitness.</h2>
+            <ul>
+                <li><img src=""><p>By: Pamela Foster </p></li>
+                <li>4.9 (5764 Rating)</li>
+            </ul>
+            <div>
+                <button>Description</button>
+                <button>Instructor</button>
+                <button>Reviews</button>
+           </div>
+           <div>
+            <h3>Description:</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <h3>Curriculum:</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularsed in the 1960 with release containing Lorem Ipsum passages desktop publishing software.</p>
+            <h3>Certification:</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularsed in the 1960 with release containing Lorem Ipsum passages desktop publishing software.</p>
+           </div>
+        </div>
+    </div>
+
+    <div class="adWrap">
+        <div class="ad">
+            <img src="shape-5.webp" class="adleaf1"><img src="shape-6.webp" class="adleaf2">
+            <h6>MOBILE APP AVAILABLE</h6>
+            <h2>Download our mobile app. and start coaching anytime.</h2>
+            <ul>
+                <li><img src="play-store.jpg"></li>
+                <li><img src="app-store.jpg"></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footerWrap">
+        <div class="leaf1"><img src="textBackground.webp"></div>
+        <div class="leaf2"><img src="textBackground.webp"></div>
+        <div class="footer">
+            <div class="footsec1">
+                <h3>Subscribe Newsletter</h3>
+                <p>Lorem Ipsum has been them an industry printer took a galley make book.</p>
+                <input type="email">
+                <button type="submit">Submit</button>
+            </div>
+            <div class="footsec2">
+                <h3>Quick Links</h3>
+                <a href="demo.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contect</a>
+            </div>
+            <div class="footsec3">
+                <h3>Opening Hours</h3>
+                <p>Mon-Fri: 9 AM – 6 PM <br> Saturday: 9 AM – 4 PM <br> Sunday: Closed</p>
+                <br>
+                <h3>Location</h3>
+                <p>176 W street name, New York, NY 10014 </p>
+            </div>
+        </div>
+
+    </div>
+    <div class="copyright">
+        <p>© 2024 Custom theme by xyz</p>
+        <ul>
+            <li><a href="">Terms of Service </a></li>
+            <li><a href="">Terms of Service </a></li>
+            <li><a href="">Terms of Service </a></li>
+            <li><a href="">Terms of Service </a></li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
