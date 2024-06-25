@@ -20,7 +20,8 @@ To view the project, follow these steps:
 3. **Open `index.html` in any web browser** to see the output.
 
 ## Screenshot
-![Screenshot of the project](J:\green.png)
+![Screenshot of the project](green.png)
+![Screenshot of the project](green2.png)
 
 ## Author
 - [Vidhi Jain](https://github.com/vidhijain1126)
